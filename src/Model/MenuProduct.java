@@ -25,6 +25,13 @@ public class MenuProduct extends Product {
         return menuProductExpense;
     }
 
+    /**
+     * Discount ratios :
+     * 10 % for main dishes -> 0.9
+     * 20 % for desserts -> 0.2
+     * 50 % for beverages -> 0.5
+     * @return selling price of menu product
+     */
     private double calculateSellingPrice() {
         double price = 0;
 
