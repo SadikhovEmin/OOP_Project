@@ -18,7 +18,8 @@ a waiter to the customer. A pop-up message will be displayed with the name of th
 who is assigned randomly. After closing the pop-up the following view is displayed 
 to the user.
 
-<img width="643" alt="Screenshot 2020-01-12 at 3 34 13 PM" src="https://user-images.githubusercontent.com/45246131/72250316-5b731e80-360c-11ea-8398-0b7f997a8034.png">
+<img width="641" alt="Screenshot 2020-01-12 at 3 32 47 PM" src="https://user-images.githubusercontent.com/45246131/72263939-ecf18900-362a-11ea-9eb0-cbf68496a108.png">
+
 
 
 
@@ -47,6 +48,41 @@ app will go to its initial state and continue from there.
 
 <img width="642" alt="Screenshot 2020-01-12 at 5 14 12 PM" src="https://user-images.githubusercontent.com/45246131/72250493-c02e7900-360c-11ea-8d20-2ccc3711b4f2.png">
 
+
+### Restaurant Management :
+
+The manager of the restaurant can also use the same program in order to manage the restaurant.
+
+<img width="644" alt="Screenshot 2020-01-13 at 5 38 07 PM" src="https://user-images.githubusercontent.com/45246131/72264295-8e78da80-362b-11ea-8634-3789c85a8088.png">
+
+
+There are 3 different types of things a user can do to manage the restaurant:
+ 
+ 1. List the currently working employees
+ 2. Add a new cook or a waiter
+ 3. Calculate the expenses
+
+There are two types of employees in this restaurant: (1) cook and (2) waiter. When user clicks the “Add Cook” button, the GUI 
+will ask for the name and salary of the cook. Similarly, for the “Add Waiter” button. In that case, user only needs to enter the 
+name of the waiter. The waiters do not have a base salary but instead get some percentage of the order they got from customers. 
+When the user clicks the “Add” button, the cook/waiter is added to the employees. Employee’s ID starts from 1 and incremented 
+whenever a new employee is added. A pop up window will be displayed to user after insertion.
+
+<p float="left">
+<img width="425" alt="Screenshot 2020-01-13 at 5 42 38 PM" src="https://user-images.githubusercontent.com/45246131/72264807-6178f780-362c-11ea-86d7-4d8c1051a6ef.png">
+<img width="425" alt="Screenshot 2020-01-13 at 5 42 56 PM" src="https://user-images.githubusercontent.com/45246131/72264819-69389c00-362c-11ea-91f7-18501494b057.png">
+</p>
+
+
+
+When user clicks “List Employees” button the all employees (waiter or cook) will be displayed to the user as shown. These employees will be sorted and printed with their employee IDs.
+
+<img width="643" alt="Screenshot 2020-01-13 at 5 48 13 PM" src="https://user-images.githubusercontent.com/45246131/72265097-f4199680-362c-11ea-86f8-cc9023a10e49.png">
+
+Finally, when the “Calculate Expenses” button is clicked, the expenses and the revenue so far will be
+calculated and displayed to the user together with the profit.
+
+<img width="645" alt="Screenshot 2020-01-13 at 5 52 00 PM" src="https://user-images.githubusercontent.com/45246131/72265378-773aec80-362d-11ea-8ca8-a288122ef9e2.png">
 
 
 ### Technologies 
