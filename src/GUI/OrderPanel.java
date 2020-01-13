@@ -89,10 +89,7 @@ public class OrderPanel extends JPanel {
         spinnerNumberModel.setMaximum(10);
         spinner.setModel(spinnerNumberModel);
 
-
-        /**
-         * Adds Objects to the upper panel (addProduct panel)
-         */
+        // Adds Objects to the upper panel (addProduct panel)
         addProduct.add(productLabel);
         addProduct.add(comboBox);
         addProduct.add(countLabel);
@@ -103,9 +100,7 @@ public class OrderPanel extends JPanel {
         addProduct.add(addButton);
 
 
-        /**
-         * Lower Part
-         */
+        // Lower part
         JPanel currentOrder = new JPanel();
         currentOrder.setBorder(BorderFactory.createTitledBorder("Current Order"));
         currentOrder.setLayout(new BorderLayout());
@@ -117,7 +112,6 @@ public class OrderPanel extends JPanel {
 
         DefaultTableModel model = new DefaultTableModel();
 
-        // Add Column method only works with JScrollPane. Without scrolling it will not be added to table
         model.addColumn("Product Name");
         model.addColumn("Count");
         model.addColumn("Price");
@@ -134,9 +128,6 @@ public class OrderPanel extends JPanel {
         addButtonActionListener(addButton,model,comboBox,spinner,priceArrayList,countArrayList);           // Adds ordered product to order list
         finalizeActionListener(finalize,priceArrayList,countArrayList);
 
-        /*
-        Adds two panels
-         */
         add(addProduct);
         add(currentOrder);
     }
