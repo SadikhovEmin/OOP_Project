@@ -124,7 +124,9 @@ public class OrderPanel extends JPanel {
         JTable table = new JTable(model);
         currentOrder.add(table,BorderLayout.NORTH);
 
-
+        JScrollPane scrollPane = new JScrollPane(table);
+        scrollPane.setVisible(true);
+        currentOrder.add(scrollPane);
 
         ArrayList<Double> priceArrayList = new ArrayList<Double>();
         ArrayList<Integer> countArrayList = new ArrayList<Integer>();
