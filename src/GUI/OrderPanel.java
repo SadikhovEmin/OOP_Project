@@ -24,7 +24,6 @@ public class OrderPanel extends JPanel {
     public OrderPanel(Restaurant restaurant) {
         orderHomePage();
         this.restaurant = restaurant;
-        this.order =  new Order();
     }
 
     // Method is used to go back to initial window after completing the order
@@ -59,6 +58,8 @@ public class OrderPanel extends JPanel {
 
     private void orderFood() {
         setLayout(new GridLayout(2,1));
+
+        this.order =  new Order();
 
         JPanel addProduct = new JPanel();
         addProduct.setBorder(BorderFactory.createTitledBorder("Add Product"));
